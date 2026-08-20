@@ -1,0 +1,24 @@
+<svg width="1800" height="600" viewBox="0 0 1800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iconBG" x1="56" y1="56" x2="544" y2="544" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFDDE7"/>
+      <stop offset="0.5" stop-color="#F4B4C8"/>
+      <stop offset="1" stop-color="#C8859E"/>
+    </linearGradient>
+    <linearGradient id="iconPin" x1="300" y1="180" x2="300" y2="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#AF5F79"/>
+      <stop offset="1" stop-color="#7D3950"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="56" y="56" width="488" height="488" rx="118" fill="url(#iconBG)"/>
+  <path d="M300 132C353.454 154.512 396 159.188 396 159.188V264.402C396 341.855 350.911 406.224 300 436.24C249.089 406.224 204 341.855 204 264.402V159.188C204 159.188 246.546 154.512 300 132Z" fill="#FFF9FB"/>
+  <path d="M300 212C334.608 212 362.667 238.822 362.667 271.907C362.667 312.278 320.993 347.678 300 374.933C279.007 347.678 237.333 312.278 237.333 271.907C237.333 238.822 265.392 212 300 212Z" fill="url(#iconPin)"/>
+  <circle cx="300" cy="272" r="33" fill="#FFF3F8"/>
+  <path d="M272 311L300 247L328 311H310L300 287L290 311H272Z" fill="#FFF3F8"/>
+  <path d="M279 295H321" stroke="#FFF3F8" stroke-width="8" stroke-linecap="round"/>
+
+  <text x="620" y="276" font-family="Avenir Next, Poppins, Montserrat, sans-serif" font-size="188" font-weight="800" fill="#4B2F39" letter-spacing="6">ASRAB</text>
+  <text x="626" y="360" font-family="Avenir Next, Poppins, Montserrat, sans-serif" font-size="56" font-weight="500" fill="#8A5B6A" letter-spacing="1">WOMEN'S SAFETY ON TRANSIT</text>
+  <rect x="620" y="390" width="520" height="8" rx="4" fill="#C8859E"/>
+</svg>
