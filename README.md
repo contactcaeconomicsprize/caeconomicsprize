@@ -16,11 +16,11 @@ Then visit `http://localhost:8000`.
 
 Most editable information is near the top of `app.js`.
 
-1. **Questions:** edit the `questions` array. Category 2 and Category 3 are marked as working questions in the source.
+1. **Questions:** edit the `questions` array. The four official 2026 questions are stored together in this array.
 2. **Dates:** edit the `timeline` array. Set `competition.deadline` only after a date is confirmed; it is currently `null`.
 3. **Judges:** add objects to the `judges` array after participation is confirmed. Supported fields can include `name`, `position`, `institution`, `field`, `photo`, `bio`, `link`, and `confirmed`.
 4. **Reviewers:** add confirmed people to the `reviewers` array and set `confirmed: true`. Unconfirmed reviewers are not rendered.
-5. **Submission form:** replace `SUBMISSION_FORM_URL` in the `competition.submissionUrl` value in `app.js`. The placeholder also remains searchable in `index.html` for clarity.
+5. **Submission form:** update `competition.submissionUrl` in `app.js` whenever the official form changes. Set `competition.submissionsOpen` to `true` for active “Submit Essay” buttons or `false` to display inactive “Submissions Opening Soon” buttons. `SUBMISSION_FORM_URL` remains searchable in `index.html` as a fallback placeholder.
 6. **Logo:** replace `assets/logo.svg` for the horizontal logo and `assets/logo-mark.svg` for the square/certificate mark. Keep the same filenames to avoid editing templates.
 
 ## Deploy with GitHub Pages
