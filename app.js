@@ -43,8 +43,6 @@ const stages = [
 ];
 const rubric = [["Economic Reasoning & Understanding","Appropriate and accurate use of economic concepts."],["Evidence","Relevant, credible, and appropriately interpreted evidence."],["Argument","A strong, coherent, and well-supported line of reasoning."],["Originality","Independent and interesting economic thinking."],["Counterarguments","Serious engagement with competing explanations and objections."],["Central Asian Relevance","Meaningful application to the economic context of Central Asia."],["Structure & Clarity","Organization, precision, and readable academic writing."]];
 
-const judges = [];
-const reviewers = [{name:"",credentials:"",confirmed:false}];
 const organizingTeam = [];
 const partners = [
   {name:"Economic Fundamentals Initiative (EFI) Uzbekistan",label:"Official Partner",logo:"assets/efi-uzbekistan.jpg",confirmed:true}
@@ -65,14 +63,6 @@ awards.forEach(([title,text],index) => add("#awards-grid", `<article class="awar
 partners.filter(partner => partner.confirmed === true).forEach(partner => add("#partners-grid", `<article class="partner-card reveal"><div class="partner-logo"><img src="${partner.logo}" alt="${partner.name} logo"></div><div class="partner-copy"><span>${partner.label}</span><h3>${partner.name}</h3></div></article>`));
 timeline.forEach(([title,date],index) => add("#timeline-grid", `<article class="timeline-item reveal"><span>${String(index + 1).padStart(2,"0")}</span><div><h3>${title}</h3><p>${date}</p></div></article>`));
 faq.forEach(([question,answer],index) => add("#faq-list", `<article class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-${index}"><span>${question}</span><i>+</i></button><div id="faq-${index}" class="faq-answer" hidden><p>${answer}</p></div></article>`));
-
-const confirmedJudges = judges.filter(judge => judge.confirmed !== false);
-const confirmedReviewers = reviewers.filter(reviewer => reviewer.confirmed === true);
-if (!confirmedJudges.length) add("#judges-grid", `<div class="panel-placeholder reveal"><img src="assets/logo-mark.svg" alt=""><div><span>Final judging panel</span><h3>Academic judging panel to be announced.</h3><p>Judge names, positions, institutions, fields, biographies, and professional links will appear only after participation is confirmed.</p></div></div>`);
-confirmedJudges.forEach(judge => add("#judges-grid", `<article class="person-card"><h3>${judge.name}</h3><p>${judge.position}${judge.institution ? ` · ${judge.institution}` : ""}</p></article>`));
-if (confirmedReviewers.length) {
-  add("#reviewers-grid", `<h3 class="reviewer-title">Confirmed preliminary reviewers</h3><div class="reviewer-cards">${confirmedReviewers.map(reviewer => `<article><strong>${reviewer.name}</strong><span>${reviewer.credentials}</span></article>`).join("")}</div>`);
-}
 
 document.querySelectorAll(".submission-link").forEach(link => {
   link.href = competition.submissionUrl;
