@@ -45,7 +45,7 @@ const rubric = [["Economic Reasoning & Understanding","Appropriate and accurate 
 
 const organizingTeam = [];
 const partners = [
-  {name:"Economic Fundamentals Initiative (EFI) Uzbekistan",label:"Official Partner",logo:"assets/efi-uzbekistan.jpg",confirmed:true}
+  {name:"Economic Fundamentals Initiative (EFI) Uzbekistan",label:"Official Partner",logo:"assets/efi-uzbekistan.jpg",description:"EFI is part of an international nonprofit initiative working to strengthen economic understanding across Central Asia, Eastern Europe, and the South Caucasus. Through this partnership, EFI Uzbekistan supports CAEP in expanding access to economics education and reaching students across the region.",url:"https://www.econfun.org/where-we-work/uzbekistan/",confirmed:true}
 ];
 const awards = [["Publication","Outstanding participants may be considered for publication opportunities where arrangements are confirmed."],["Academic Recognition","Outstanding work may receive academic recognition from the Central Asia Economics Prize."],["Further Engagement","Outstanding participants may receive opportunities for further engagement with economists and researchers."]];
 const timeline = [["Submission Deadline","24 September 2026 · 23:59 Uzbekistan Time (UTC+5)"],["Preliminary Review","Schedule to be announced"],["Final Round","Schedule to be announced"],["Results","Schedule to be announced"]];
@@ -60,7 +60,7 @@ rules.forEach((item,index) => add("#rule-list", `<article class="rule-item"><but
 stages.forEach(item => add("#stages-grid", `<article class="stage reveal"><span>${item.number}</span><h3>${item.title}</h3><p>${item.text}</p></article>`));
 rubric.forEach(([title,text]) => add("#rubric-grid", `<article class="rubric-item reveal"><div><strong>${title}</strong></div><p>${text}</p><div class="score-bar"><i></i></div></article>`));
 awards.forEach(([title,text],index) => add("#awards-grid", `<article class="award reveal"><span>0${index + 1}</span><h3>${title}</h3><p>${text}</p></article>`));
-partners.filter(partner => partner.confirmed === true).forEach(partner => add("#partners-grid", `<article class="partner-card reveal"><div class="partner-logo"><img src="${partner.logo}" alt="${partner.name} logo"></div><div class="partner-copy"><span>${partner.label}</span><h3>${partner.name}</h3></div></article>`));
+partners.filter(partner => partner.confirmed === true).forEach(partner => add("#partners-grid", `<article class="partner-card reveal"><div class="partner-logo"><img src="${partner.logo}" alt="${partner.name} logo"></div><div class="partner-copy"><span>${partner.label}</span><h3>${partner.name}</h3><p>${partner.description}</p><a href="${partner.url}" target="_blank" rel="noopener noreferrer">Learn more about EFI <i aria-hidden="true">→</i></a></div></article>`));
 timeline.forEach(([title,date],index) => add("#timeline-grid", `<article class="timeline-item reveal"><span>${String(index + 1).padStart(2,"0")}</span><div><h3>${title}</h3><p>${date}</p></div></article>`));
 faq.forEach(([question,answer],index) => add("#faq-list", `<article class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-${index}"><span>${question}</span><i>+</i></button><div id="faq-${index}" class="faq-answer" hidden><p>${answer}</p></div></article>`));
 
