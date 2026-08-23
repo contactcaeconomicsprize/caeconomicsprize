@@ -22,6 +22,7 @@ Most editable information is near the top of `app.js`.
 4. **Reviewers:** add confirmed people to the `reviewers` array and set `confirmed: true`. Unconfirmed reviewers are not rendered.
 5. **Submission form:** update `competition.submissionUrl` in `app.js` whenever the official form changes. Set `competition.submissionsOpen` to `true` for active “Submit Essay” buttons or `false` to display inactive “Submissions Opening Soon” buttons. `SUBMISSION_FORM_URL` remains searchable in `index.html` as a fallback placeholder.
 6. **Logo:** replace `assets/logo.svg` for the horizontal logo and `assets/logo-mark.svg` for the square/certificate mark. Keep the same filenames to avoid editing templates.
+7. **Partners:** add only confirmed organizations to the `partners` array and set `confirmed: true`. Partner logos are displayed without cropping or recoloring.
 
 ## Deploy with GitHub Pages
 
