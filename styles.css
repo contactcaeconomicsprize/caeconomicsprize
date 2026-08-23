@@ -19,3 +19,16 @@
 @media(max-width:1040px){.question-grid{grid-template-columns:1fr}.question-card{min-height:0}}
 @media(max-width:820px){.judging-summary{margin-left:10%}.submission-panel{grid-template-columns:1fr;gap:28px;align-items:start}}
 @media(max-width:560px){.judging-summary{margin-left:0}.submission-panel .button{width:100%;min-width:0}}
+
+/* Final 2026 launch details */
+.hero-note{margin-bottom:20px}
+.hero-deadline{display:flex;align-items:baseline;gap:10px;margin:0 0 28px;color:#d9e0e4;font-size:12px}
+.hero-deadline span{text-transform:uppercase;letter-spacing:.1em}
+.hero-deadline strong{color:#e1c878;font:600 17px var(--serif)}
+.question-card h3{margin-bottom:8px}
+.question-card .question-description{margin:0 0 20px;color:#8b6b20;font-size:10px;font-weight:700;letter-spacing:.08em;line-height:1.5;text-transform:uppercase}
+.deadline-panel{border-left:3px solid var(--gold);padding:5px 0 5px 24px}
+.deadline-panel span{display:block;color:#e1c878;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.deadline-panel strong{display:block;margin:8px 0 2px;color:white;font:500 27px var(--serif)}
+.deadline-panel p{margin:0;color:#c8d1d6;font-size:12px}
+@media(max-width:560px){.hero-deadline{align-items:flex-start;flex-direction:column;gap:2px}}
