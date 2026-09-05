@@ -35,7 +35,7 @@
 
 /* Confirmed institutional partner */
 .partner-strip{padding:30px 0;background:var(--cream);border-bottom:1px solid var(--line)}
-.partners-grid{max-width:820px;margin-inline:auto}
+.partners-grid{display:grid;gap:16px;max-width:820px;margin-inline:auto}
 .partner-card{display:grid;grid-template-columns:220px 1fr;align-items:center;background:transparent}
 .partner-logo{display:flex;align-items:center;justify-content:center;min-height:120px;padding:18px 30px;background:#fff;border:1px solid var(--line)}
 .partner-logo img{display:block;width:auto;max-width:100%;height:auto;max-height:90px;object-fit:contain}
