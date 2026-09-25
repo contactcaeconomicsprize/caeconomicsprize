@@ -5,7 +5,7 @@ const competition = {
   email: "contact@caeconomicsprize.org",
   domain: "https://caeconomicsprize.org",
   submissionUrl: "https://docs.google.com/forms/d/e/1FAIpQLSd_koG5rX0X-jh8Q7vupXcYGySmzLPMPuGzQNK4cCeZIjZDzQ/viewform?usp=publish-editor",
-  submissionsOpen: true,
+  submissionsOpen: false,
   deadline: "2026-09-24T23:59:00+05:00"
 };
 
@@ -66,10 +66,10 @@ timeline.forEach(([title,date],index) => add("#timeline-grid", `<article class="
 faq.forEach(([question,answer],index) => add("#faq-list", `<article class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-${index}"><span>${question}</span><i>+</i></button><div id="faq-${index}" class="faq-answer" hidden><p>${answer}</p></div></article>`));
 
 document.querySelectorAll(".submission-link").forEach(link => {
-  link.href = competition.submissionUrl;
-  link.textContent = competition.submissionsOpen ? "Submit Essay" : "Submissions Opening Soon";
+  link.href = competition.submissionsOpen ? competition.submissionUrl : "#submit";
+  link.textContent = competition.submissionsOpen ? "Submit Essay" : "Submissions Closed";
   link.setAttribute("aria-disabled", String(!competition.submissionsOpen));
-  if (!competition.submissionsOpen || competition.submissionUrl === "SUBMISSION_FORM_URL") link.addEventListener("click", event => { event.preventDefault(); alert("Submissions are not open yet. The official form will be published here when available."); });
+  if (!competition.submissionsOpen || competition.submissionUrl === "SUBMISSION_FORM_URL") link.addEventListener("click", event => { event.preventDefault(); alert("Submissions for the Central Asia Economics Prize 2026 are now closed."); });
 });
 
 function setupAccordion(containerSelector, itemSelector, contentSelector) {
