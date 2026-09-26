@@ -17,10 +17,14 @@ Then visit `http://localhost:8000`.
 Most editable information is near the top of `app.js`.
 
 1. **Questions:** edit the `questions` array. The four official 2026 questions are stored together in this array.
-2. **Dates:** edit the `timeline` array and `competition.deadline`. The confirmed submission deadline is `2026-09-24T23:59:00+05:00` (24 September 2026 at 23:59 Uzbekistan Time).
-3. **Submission form:** update `competition.submissionUrl` in `app.js` whenever the official form changes. Set `competition.submissionsOpen` to `true` for active “Submit Essay” buttons or `false` to display inactive “Submissions Opening Soon” buttons. `SUBMISSION_FORM_URL` remains searchable in `index.html` as a fallback placeholder.
-4. **Logo:** replace `assets/logo.svg` for the horizontal logo and `assets/logo-mark.svg` for the square/certificate mark. Keep the same filenames to avoid editing templates.
-5. **Partners:** add only confirmed organizations to the `partners` array and set `confirmed: true`. Partner logos are displayed without cropping or recoloring.
+2. **Impact statistics:** edit the `facts` array. The current values are 183 submissions, 34 countries and territories, 59 essays advanced to preliminary review, and 4 economics categories.
+3. **Dates and stages:** edit the `timeline` and `stages` arrays. Each item uses a `completed`, `current`, or `upcoming` status for its visual state.
+4. **Organizing team:** edit the `organizingTeam` array. Portrait files use a shared 4:5 display frame; `position` controls CSS-only framing without changing the source image.
+5. **Review panels:** edit `preliminaryReviewers` and `finalJudges`. Add names, titles, or affiliations only after confirmation.
+6. **Submission form:** update `competition.submissionUrl` in `app.js` whenever the official form changes. Set `competition.submissionsOpen` to `true` for active “Submit Essay” buttons or `false` to display inactive “Submissions Closed” buttons. `SUBMISSION_FORM_URL` remains searchable in `index.html` as a fallback placeholder.
+7. **Results:** replace the placeholder content in the `#results` section of `index.html` when finalists, winners, and publication links are confirmed.
+8. **Logo:** replace `assets/logo.svg` for the horizontal logo and `assets/logo-mark.svg` for the square/certificate mark. Keep the same filenames to avoid editing templates.
+9. **Partners:** add only confirmed organizations to the `partners` array and set `confirmed: true`. Partner logos are displayed without cropping or recoloring.
 
 ## Deploy with GitHub Pages
 
