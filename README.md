@@ -17,7 +17,7 @@ Then visit `http://localhost:8000`.
 Most editable information is near the top of `app.js`.
 
 1. **Questions:** edit the `questions` array. The four official 2026 questions are stored together in this array.
-2. **Impact statistics:** edit the `facts` array. The current values are 183 submissions, 34 countries and territories, 59 essays advanced to preliminary review, and 4 economics categories.
+2. **Impact statistics:** edit the `facts` array. The current values are 183 submissions, 34 countries and territories, and 4 economics categories.
 3. **Dates and stages:** edit the `timeline` and `stages` arrays. Each item uses a `completed`, `current`, or `upcoming` status for its visual state.
 4. **Organizing team:** edit the `organizingTeam` array. Portrait files use a shared 4:5 display frame; `position` controls CSS-only framing without changing the source image.
 5. **Review panels:** edit `preliminaryReviewers` and `finalJudges`. Add names, titles, or affiliations only after confirmation.
