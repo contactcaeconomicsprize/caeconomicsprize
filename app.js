@@ -38,7 +38,7 @@ const rules = [
 const stages = [
   {number:"01",title:"Submission",text:"The 2026 submission period closed on September 24, 2026.",status:"completed"},
   {number:"02",title:"Initial Screening",text:"Entries were checked against the competition's eligibility and submission requirements.",status:"completed"},
-  {number:"03",title:"Preliminary Review",text:"The 59 essays that advanced are currently undergoing preliminary review.",status:"current"},
+  {number:"03",title:"Preliminary Review",text:"Preliminary review is currently underway.",status:"current"},
   {number:"04",title:"Finalist Review",text:"Selected essays will advance for evaluation by the final judging panel.",status:"upcoming"},
   {number:"05",title:"Results",text:"The 2026 results will be announced in early October.",status:"upcoming"}
 ];
