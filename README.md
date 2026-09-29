@@ -19,7 +19,7 @@ Most editable information is near the top of `app.js`.
 1. **Questions:** edit the `questions` array. The four official 2026 questions are stored together in this array.
 2. **Impact statistics:** edit the `facts` array. The current values are 183 submissions, 34 countries and territories, and 4 economics categories.
 3. **Dates and stages:** edit the `timeline` and `stages` arrays. Each item uses a `completed`, `current`, or `upcoming` status for its visual state.
-4. **Organizing team:** edit the `organizingTeam` array. Portrait files use a shared 4:5 display frame; `position` controls CSS-only framing without changing the source image.
+4. **Organizing team:** edit the team cards and matching JSON-LD person data in `index.html`. Portrait files use a shared 4:5 display frame; inline `object-position` controls CSS-only framing without changing the source image.
 5. **Review panels:** edit `preliminaryReviewers` and `finalJudges`. Add names, titles, or affiliations only after confirmation.
 6. **Submission form:** update `competition.submissionUrl` in `app.js` whenever the official form changes. Set `competition.submissionsOpen` to `true` for active “Submit Essay” buttons or `false` to display inactive “Submissions Closed” buttons. `SUBMISSION_FORM_URL` remains searchable in `index.html` as a fallback placeholder.
 7. **Results:** replace the placeholder content in the `#results` section of `index.html` when finalists, winners, and publication links are confirmed.

@@ -47,11 +47,6 @@ const rubric = [["Economic Reasoning & Understanding","Appropriate and accurate 
 const preliminaryReviewers = ["Marufbek Kholmuminov","Khumoyunbek Ibrohimov","Khilola Boymuratova","Boynazarov Asliddin","Marjona Ibrokhimova","Hazratbek Ahmadjonov"];
 const finalJudges = ["Dr. Nargiza Alimakhammedova","Dr. Temur Makhkamov","Mrs. Khilola Ruziboeva"];
 
-const organizingTeam = [
-  {name:"Shakhriniso Kholboeva",role:"Founder & Director",school:"Presidential School in Karshi, Uzbekistan",photo:"assets/shakhriniso-kholboeva.jpg",position:"50% 40%"},
-  {name:"Bunyod Kabiljanov",role:"Co-Founder & Academic Lead",school:"Presidential School in Karshi, Uzbekistan",photo:"assets/bunyod-kabiljanov.jpg",position:"50% 46%"},
-  {name:"Komilkhon Norkhujaev",role:"Co-Founder & Operations Lead",school:"Presidential School in Samarkand, Uzbekistan",photo:"assets/komilkhon-norkhujaev.jpg",position:"60% 50%"}
-];
 const partners = [
   {name:"Economic Fundamentals Initiative (EFI) Uzbekistan",label:"Official Partner",logo:"assets/efi-uzbekistan.jpg",description:"EFI is part of an international nonprofit initiative working to strengthen economic understanding across Central Asia, Eastern Europe, and the South Caucasus. Through this partnership, EFI Uzbekistan supports CAEP in expanding access to economics education and reaching students across the region.",url:"https://www.econfun.org/where-we-work/uzbekistan/",linkLabel:"Learn more about EFI",confirmed:true},
   {name:"The Confluence",label:"Publication Partner",logo:"assets/confluence-wordmark-navy.png",description:"The Confluence is an international student journal of social sciences and current affairs, publishing student analysis across politics, economics, business, philosophy, history, and related fields.",url:"https://www.instagram.com/the_confluence_journal?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==",linkLabel:"Learn more about The Confluence",confirmed:true}
@@ -75,7 +70,6 @@ stages.forEach(item => add("#stages-grid", `<article class="stage ${item.status}
 rubric.forEach(([title,text]) => add("#rubric-grid", `<article class="rubric-item reveal"><div><strong>${title}</strong></div><p>${text}</p><div class="score-bar"><i></i></div></article>`));
 preliminaryReviewers.forEach(name => add("#preliminary-reviewers", `<li class="reviewer reveal"><span>Preliminary Reviewer</span><strong>${name}</strong></li>`));
 finalJudges.forEach(name => add("#final-judges", `<li class="reviewer reveal"><span>Final Judge</span><strong>${name}</strong></li>`));
-organizingTeam.forEach(member => add("#organizing-team-grid", `<article class="team-profile reveal"><div class="team-photo"><img src="${member.photo}" alt="Portrait of ${member.name}" style="object-position:${member.position}" loading="lazy"></div><div class="team-copy"><h3>${member.name}</h3><p class="team-role">${member.role}</p><p class="team-school">${member.school}</p></div></article>`));
 awards.forEach(([title,text],index) => add("#awards-grid", `<article class="award reveal"><span>0${index + 1}</span><h3>${title}</h3><p>${text}</p></article>`));
 partners.filter(partner => partner.confirmed === true).forEach(partner => add("#partners-grid", `<article class="partner-card reveal"><div class="partner-logo"><img src="${partner.logo}" alt="${partner.name} logo"></div><div class="partner-copy"><span>${partner.label}</span><h3>${partner.name}</h3><p>${partner.description}</p><a href="${partner.url}" target="_blank" rel="noopener noreferrer">${partner.linkLabel} <i aria-hidden="true">→</i></a></div></article>`));
 timeline.forEach((item,index) => add("#timeline-grid", `<article class="timeline-item ${item.status} reveal"><div class="timeline-meta"><span>${String(index + 1).padStart(2,"0")}</span><small>${item.status}</small></div><div><p>${item.date}</p><h3>${item.title}</h3></div></article>`));

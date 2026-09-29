@@ -29,7 +29,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Central Asia Economics Prize","alternateName":"CAEP","url":"https://caeconomicsprize.org/","email":"contact@caeconomicsprize.org","description":"The inaugural Central Asia Economics Prize received 183 submissions from 34 countries and territories and is currently in the 2026 review stage."}</script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://caeconomicsprize.org/#organization",
+          "name": "Central Asia Economics Prize",
+          "alternateName": "CAEP",
+          "url": "https://caeconomicsprize.org/",
+          "logo": "https://caeconomicsprize.org/assets/logo-mark.svg",
+          "email": "contact@caeconomicsprize.org",
+          "description": "The inaugural Central Asia Economics Prize received 183 submissions from 34 countries and territories and is currently in the 2026 review stage.",
+          "founder": {
+            "@id": "https://caeconomicsprize.org/#shakhriniso-kholboeva"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://caeconomicsprize.org/#shakhriniso-kholboeva",
+          "name": "Shakhriniso Kholboeva",
+          "jobTitle": "Founder & Director",
+          "image": "https://caeconomicsprize.org/assets/shakhriniso-kholboeva.jpg",
+          "affiliation": {
+            "@type": "EducationalOrganization",
+            "name": "Presidential School in Karshi, Uzbekistan"
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -71,7 +101,7 @@
       <div class="principles" id="principles-grid"></div>
     </section>
 
-    <section class="section team-section" id="team"><div class="shell"><div class="split-intro reveal"><div><p class="kicker">Organizing Team</p><h2>The people<br><em>behind CAEP.</em></h2></div><p>The organizing team founded and runs the Central Asia Economics Prize. It is separate from the preliminary reviewers and final judging panel.</p></div><div class="organizing-team-grid" id="organizing-team-grid"></div></div></section>
+    <section class="section team-section" id="team"><div class="shell"><div class="split-intro reveal"><div><p class="kicker">Organizing Team</p><h2>The people<br><em>behind CAEP.</em></h2></div><p>The organizing team founded and runs the Central Asia Economics Prize. It is separate from the preliminary reviewers and final judging panel.</p></div><div class="organizing-team-grid" id="organizing-team-grid"><article class="team-profile reveal"><div class="team-photo"><img src="assets/shakhriniso-kholboeva.jpg" alt="Portrait of Shakhriniso Kholboeva" style="object-position:50% 40%" loading="lazy"></div><div class="team-copy"><h3>Shakhriniso Kholboeva</h3><p class="team-role">Founder &amp; Director</p><p class="team-school">Presidential School in Karshi, Uzbekistan</p></div></article><article class="team-profile reveal"><div class="team-photo"><img src="assets/bunyod-kabiljanov.jpg" alt="Portrait of Bunyod Kabiljanov" style="object-position:50% 46%" loading="lazy"></div><div class="team-copy"><h3>Bunyod Kabiljanov</h3><p class="team-role">Co-Founder &amp; Academic Lead</p><p class="team-school">Presidential School in Karshi, Uzbekistan</p></div></article><article class="team-profile reveal"><div class="team-photo"><img src="assets/komilkhon-norkhujaev.jpg" alt="Portrait of Komilkhon Norkhujaev" style="object-position:60% 50%" loading="lazy"></div><div class="team-copy"><h3>Komilkhon Norkhujaev</h3><p class="team-role">Co-Founder &amp; Operations Lead</p><p class="team-school">Presidential School in Samarkand, Uzbekistan</p></div></article></div></div></section>
 
     <section class="section cream" id="competition"><div class="shell">
       <div class="split-intro reveal"><div><p class="kicker">02 — Competition</p><h2>Who can<br><em>take part?</em></h2></div><p>The competition is open to high-school students aged 14–19 at the submission deadline. Students from any country may participate, but every essay must directly engage with Central Asia.</p></div>
