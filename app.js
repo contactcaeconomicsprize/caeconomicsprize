@@ -44,7 +44,7 @@ const stages = [
 ];
 const rubric = [["Economic Reasoning & Understanding","Appropriate and accurate use of economic concepts."],["Evidence","Relevant, credible, and appropriately interpreted evidence."],["Argument","A strong, coherent, and well-supported line of reasoning."],["Originality","Independent and interesting economic thinking."],["Counterarguments","Serious engagement with competing explanations and objections."],["Central Asian Relevance","Meaningful application to the economic context of Central Asia."],["Structure & Clarity","Organization, precision, and readable academic writing."]];
 
-const preliminaryReviewers = ["Marufbek Kholmuminov","Khumoyunbek Ibrohimov","Khilola Boymuratova","Boynazarov Asliddin","Marjona Ibrokhimova"];
+const preliminaryReviewers = ["Marufbek Kholmuminov","Khumoyunbek Ibrohimov","Khilola Boymuratova","Boynazarov Asliddin","Marjona Ibrokhimova","Hazratbek Ahmadjonov"];
 const finalJudges = ["Dr. Nargiza Alimakhammedova","Dr. Temur Makhkamov","Mrs. Khilola Ruziboeva"];
 
 const organizingTeam = [
