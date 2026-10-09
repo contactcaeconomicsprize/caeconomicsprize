@@ -72,6 +72,7 @@
 .update-copy p{margin:0 0 16px;color:var(--navy);font:500 22px/1.5 var(--serif)}
 .update-copy strong{display:block;color:#8b6b20;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
 .update-copy .update-note{margin:18px 0 0;color:var(--muted);font:400 13px/1.65 var(--sans)}
+.update-copy .update-note+strong{margin-top:18px}
 .stages{grid-template-columns:repeat(5,1fr)}
 .stage{position:relative;min-height:290px;border-top:4px solid transparent}
 .stage-meta{display:flex;align-items:center;justify-content:space-between;gap:12px}
