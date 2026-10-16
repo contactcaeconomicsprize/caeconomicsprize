@@ -111,7 +111,7 @@
     if (entries.length !== 34 || total !== 183 || entries.some(([,count]) => !Number.isInteger(count) || count < 1)) {
       throw new Error('Submission data failed validation.');
     }
-    const stats = [[total,'Submitted entries'],[entries.length,'Countries & territories'],[4,'Economics categories'],[59,'Advanced to preliminary review']];
+    const stats = [[total,'Submitted entries'],[entries.length,'Countries & territories'],[4,'Economics categories']];
     stats.forEach(([value,label]) => {
       const item = document.createElement('div');
       item.className = 'reach-stat';

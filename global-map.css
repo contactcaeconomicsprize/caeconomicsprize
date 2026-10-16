@@ -1,7 +1,7 @@
 .global-reach{--reach-navy:#112440;--reach-gold:#c5a35a;--reach-burgundy:#801e2b;--reach-slate:#5f6875;background:#faf7f0;color:var(--reach-navy);border-block:1px solid var(--line)}
 .global-reach h2{max-width:1000px}
 .reach-intro{max-width:740px;color:var(--reach-slate);margin:26px 0 40px}
-.reach-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:1px solid #dcdedb;margin-bottom:30px}
+.reach-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-block:1px solid #dcdedb;margin-bottom:30px}
 .reach-stat{padding:22px 20px;border-right:1px solid #dcdedb}
 .reach-stat:first-child{padding-left:0}.reach-stat:last-child{border:0}
 .reach-stat strong{display:block;font:500 34px/1.2 var(--serif)}
@@ -37,3 +37,4 @@
 @media(max-width:820px){.reach-layout{grid-template-columns:1fr}.reach-panel{min-height:230px}.reach-panel dl{display:grid;grid-template-columns:1fr 1fr;gap:12px}.reach-caption{flex-direction:column;gap:8px}#reach-country-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.reach-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.reach-stat,.reach-stat:first-child{padding:20px 12px}.reach-stat:nth-child(2){border-right:0}.reach-stat:nth-child(n+3){border-top:1px solid #dcdedb}.reach-stat strong{font-size:30px}.reach-panel{padding:24px 20px}.reach-panel h3{font-size:28px}.reach-layout{gap:16px}.reach-marker-hit{r:20px}}
 @media(prefers-reduced-motion:reduce){.reach-country.represented{transition:none}}
+@media(max-width:560px){.reach-stat:last-child{grid-column:1/-1}}
