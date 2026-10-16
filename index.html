@@ -29,6 +29,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="global-map.css">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -95,6 +96,29 @@
 
     <section class="section competition-update" id="update"><div class="shell update-grid"><div class="section-intro reveal"><p class="kicker">2026 Competition Update</p><h2>CAEP 2026 —<br><em>Final Judging in Progress</em></h2></div><div class="update-copy reveal"><p>The CAEP 2026 finalist essays are currently under review by our final judging panel. We appreciate your patience and look forward to announcing the results soon. Stay tuned for updates!</p><p class="update-note">CAEP 2026 received 182 submissions. After the review process, just 12 essays advanced to the Final Round — placing them among the top 6.6% of all entries.</p><p class="update-note">Shortlisted participants have been contacted directly and their essays are now being evaluated by the CAEP Final Judging Panel.</p><strong>Preliminary Review Completed — Final Judging in Progress</strong></div></div></section>
 
+    <section class="section global-reach" id="global-reach" aria-labelledby="global-reach-heading">
+      <div class="shell">
+        <p class="kicker">Our Global Reach</p>
+        <h2 id="global-reach-heading">Ideas from 34<br><em>Countries and Territories.</em></h2>
+        <p class="reach-intro">In its inaugural year, the Central Asia Economics Prize brought together young thinkers from across the world to examine the economic challenges shaping Central Asia.</p>
+        <div class="reach-stats" id="reach-stats" aria-label="Historical 2026 submission statistics"></div>
+        <div class="reach-layout">
+          <div class="reach-map-wrap">
+            <svg id="reach-map" viewBox="0 0 960 540" role="group" aria-label="Interactive map of CAEP 2026 submissions" aria-describedby="reach-instructions"></svg>
+            <div class="reach-tooltip" id="reach-tooltip" aria-hidden="true" hidden></div>
+            <p class="reach-map-message" id="reach-map-message">Loading geographic boundaries…</p>
+          </div>
+          <aside class="reach-panel" aria-label="Selected country submission information">
+            <div id="reach-selection" aria-live="polite" aria-atomic="true"><h3>Explore the map</h3><p>Select a highlighted country to see how many essays were submitted from there.</p></div>
+            <button type="button" class="reach-reset" id="reach-reset" disabled>Reset selection <span aria-hidden="true">↺</span></button>
+          </aside>
+        </div>
+        <div class="reach-caption"><p id="reach-instructions"><span class="reach-key" aria-hidden="true"></span>Submissions received · Select a country or marker, or use the country list below.</p><p>Historical submission data · 2026</p></div>
+        <details class="reach-countries"><summary>Explore all 34 countries and territories</summary><ul id="reach-country-list" aria-label="Submissions by country and territory"></ul></details>
+        <noscript><p>Enable JavaScript to explore the interactive submissions map.</p></noscript>
+      </div>
+    </section>
+
     <section class="section shell" id="about">
       <div class="section-intro reveal"><p class="kicker">01 — About</p><h2>Economics rooted<br><em>in the region.</em></h2></div>
       <div class="editorial-copy reveal"><p class="lead">The Central Asia Economics Prize is a free economics essay competition for high-school students aged 14–19.</p><p>Students from any country may participate, but all essays must directly engage with the economic context of Central Asia. Participants choose one of four economics questions and submit an individual essay of no more than 1,200 words in English.</p><p>The competition encourages students to develop evidence-based arguments, engage with competing perspectives, and apply economic reasoning to real problems.</p></div>
@@ -154,5 +178,8 @@
   <footer class="site-footer"><div class="shell footer-grid"><img src="assets/logo.svg" alt="Central Asia Economics Prize"><p>Economics. Evidence. Central Asia.</p><nav aria-label="Footer navigation"><a href="#update">Update</a><a href="#team">Organizing Team</a><a href="#questions">Questions</a><a href="#rules">Rules</a><a href="#judging">Review Process</a><a href="#panels">Review Panels</a><a href="#results">Results</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav><a href="mailto:contact@caeconomicsprize.org">contact@caeconomicsprize.org</a><p class="partner-line"><span>Official Partner:</span><strong>Economic Fundamentals Initiative (EFI) Uzbekistan</strong></p><p class="disclaimer">The Central Asia Economics Prize is an independent educational initiative. Individuals and organizations are identified as judges, reviewers, supporters, or partners only after their involvement has been confirmed.</p><p class="copyright">© 2026 Central Asia Economics Prize</p></div></footer>
   <button class="back-top" type="button" aria-label="Back to top">↑</button>
   <script src="app.js"></script>
+  <script defer src="assets/vendor/d3-7.9.0.min.js"></script>
+  <script defer src="assets/vendor/topojson-client-3.1.0.min.js"></script>
+  <script defer src="global-map.js"></script>
 </body>
 </html>
