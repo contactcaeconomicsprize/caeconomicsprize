@@ -4,12 +4,13 @@ const competition = {
   year: 2026,
   email: "contact@caeconomicsprize.org",
   domain: "https://caeconomicsprize.org",
-  submissionUrl: "https://docs.google.com/forms/d/e/1FAIpQLSd_koG5rX0X-jh8Q7vupXcYGySmzLPMPuGzQNK4cCeZIjZDzQ/viewform?usp=publish-editor",
+  status: "completed",
+  announcementDate: "2026-10-24",
   submissionsOpen: false,
   deadline: "2026-09-24T23:59:00+05:00"
 };
 
-const facts = [["182","Submissions"],["12","Finalists"],["Top 6.6%","Advanced"]];
+const facts = [["183","Submissions"],["34","Countries & Territories"],["12","Finalists"],["4","Economics Categories"]];
 const principles = [["01","Economic Reasoning","Apply economics rather than simply describing an issue."],["02","Evidence","Use research, statistics, and credible sources to support important claims."],["03","Independent Thinking","Develop an argument rather than searching for a predetermined “correct” answer."]];
 const requirements = [["Maximum Length","1,200 words"],["Language","English"],["Entry","Free"],["Format","PDF"],["Entries","Individual only"],["Number of Entries","One per participant"],["Central Asian Focus","Required"],["University Students","Not eligible after beginning full-time undergraduate study"]];
 
@@ -39,8 +40,8 @@ const stages = [
   {number:"01",title:"Submission",text:"The 2026 submission period closed on September 24, 2026.",status:"completed"},
   {number:"02",title:"Initial Screening",text:"Entries were checked against the competition's eligibility and submission requirements.",status:"completed"},
   {number:"03",title:"Preliminary Review",text:"The preliminary review stage has concluded.",status:"completed"},
-  {number:"04",title:"Final Evaluation — In Progress",text:"The 12 shortlisted essays are being evaluated by the final judging panel.",status:"current"},
-  {number:"05",title:"Results",text:"Final results will be announced after the judging process concludes.",status:"upcoming"}
+  {number:"04",title:"Final Evaluation",text:"The 12 shortlisted essays were evaluated by the final judging panel.",status:"completed"},
+  {number:"05",title:"Results",text:"The winners were announced on October 24, 2026.",status:"completed"}
 ];
 const rubric = [["Economic Reasoning & Understanding","Appropriate and accurate use of economic concepts."],["Evidence","Relevant, credible, and appropriately interpreted evidence."],["Argument","A strong, coherent, and well-supported line of reasoning."],["Originality","Independent and interesting economic thinking."],["Counterarguments","Serious engagement with competing explanations and objections."],["Central Asian Relevance","Meaningful application to the economic context of Central Asia."],["Structure & Clarity","Organization, precision, and readable academic writing."]];
 
@@ -54,10 +55,10 @@ const awards = [["Publication","Outstanding participants may be considered for p
 const timeline = [
   {date:"September 24, 2026",title:"Submissions Closed",status:"completed"},
   {date:"September 26 – October 1, 2026",title:"Preliminary Review",status:"completed"},
-  {date:"In Progress",title:"Final Evaluation — In Progress",status:"current"},
-  {date:"Coming Soon",title:"Results Announcement",status:"upcoming"}
+  {date:"Completed",title:"Final Evaluation",status:"completed"},
+  {date:"October 24, 2026",title:"Winners Announcement Ceremony",status:"completed"}
 ];
-const faq = [["Who can enter?","High-school students aged 14–19."],["Do I have to live in Central Asia?","No. The competition is open worldwide, but every essay must directly address the Central Asian context."],["When did submissions close?","Submissions closed on 24 September 2026 at 23:59 Uzbekistan Time (UTC+5)."],["What is the current competition stage?","Preliminary review has concluded. The 12 shortlisted essays are now in the Final Round and are being evaluated by the final judging panel."],["How much does it cost?","Entry is free."],["How long can my essay be?","Maximum 1,200 words. The bibliography or reference list is excluded."],["What language should I write in?","English."],["How many essays can I submit?","One essay per participant."],["Can I answer more than one question?","No. Select one of the four official categories and answer its question."],["Can my name appear on the essay?","No. Essays are anonymized for review."],["Do I need to discuss every Central Asian country?","No. Participants may focus on one or more countries, but a Central Asian focus is required."],["Can teams submit?","No. Entries are individual only."],["Do I need advanced economics knowledge?","No. Strong reasoning and evidence matter more than advanced mathematics."],["Is econometric analysis required?","No."],["Can I use AI?","Generative AI must not produce substantive ideas, arguments, analysis, essay text, or conclusions on the participant's behalf."],["Which citation style should I use?","Any recognized academic citation style used consistently."],["How are essays judged?","Essays are anonymized before review. Following initial screening and preliminary review, shortlisted essays advance to the Final Round for evaluation by the independent final judging panel."],["Will every participant receive feedback?","No. Individual feedback cannot be guaranteed."],["Will winning essays be published?","Outstanding participants may receive publication opportunities where arrangements are confirmed; publication is not guaranteed."]];
+const faq = [["Is CAEP 2026 complete?","Yes. The inaugural edition concluded with the Winners Announcement Ceremony on October 24, 2026. Official results are available on the 2026 Results page."],["Who was eligible for CAEP 2026?","High-school students aged 14–19 at the submission deadline."],["Was residence in Central Asia required?","No. The 2026 competition was open worldwide, but every essay had to directly address the Central Asian context."],["When did submissions close?","Submissions closed on 24 September 2026 at 23:59 Uzbekistan Time (UTC+5)."],["How much did entry cost?","Entry was free."],["What was the essay word limit?","Maximum 1,200 words. The bibliography or reference list was excluded."],["What language was required?","English."],["How many essays could a participant submit?","One essay per participant, answering one of the four official questions."],["Could names appear on essays?","No. Essays were anonymized for review."],["Was discussing every Central Asian country required?","No. Participants could focus on one or more countries, with a Central Asian focus required."],["Could teams submit?","No. Entries were individual only."],["Was advanced economics knowledge required?","No. Strong reasoning and evidence mattered more than advanced mathematics."],["Was econometric analysis required?","No."],["What was the AI policy?","Generative AI could not produce substantive ideas, arguments, analysis, essay text, or conclusions on the participant's behalf."],["Which citation styles were accepted?","Any recognized academic citation style used consistently."],["How were essays judged?","Essays were anonymized before review. Following initial screening and preliminary review, twelve shortlisted essays advanced to the Final Round for independent evaluation by the final judging panel."],["Did every participant receive feedback?","Individual feedback was not guaranteed."],["Are full winning essays available?","Not yet. Full essays will be published only with explicit permission from their authors."]];
 
 const add = (selector, html) => document.querySelector(selector)?.insertAdjacentHTML("beforeend", html);
 facts.forEach(([value,label]) => add("#facts-grid", `<div class="fact"><strong>${value}</strong><span>${label}</span></div>`));
@@ -72,29 +73,3 @@ awards.forEach(([title,text],index) => add("#awards-grid", `<article class="awar
 partners.filter(partner => partner.confirmed === true).forEach(partner => add("#partners-grid", `<article class="partner-card reveal"><div class="partner-logo"><img src="${partner.logo}" alt="${partner.name} logo"></div><div class="partner-copy"><span>${partner.label}</span><h3>${partner.name}</h3><p>${partner.description}</p><a href="${partner.url}" target="_blank" rel="noopener noreferrer">${partner.linkLabel} <i aria-hidden="true">→</i></a></div></article>`));
 timeline.forEach((item,index) => add("#timeline-grid", `<article class="timeline-item ${item.status} reveal"><div class="timeline-meta"><span>${String(index + 1).padStart(2,"0")}</span><small>${item.status}</small></div><div><p>${item.date}</p><h3>${item.title}</h3></div></article>`));
 faq.forEach(([question,answer],index) => add("#faq-list", `<article class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-${index}"><span>${question}</span><i>+</i></button><div id="faq-${index}" class="faq-answer" hidden><p>${answer}</p></div></article>`));
-
-document.querySelectorAll(".submission-link").forEach(link => {
-  link.href = competition.submissionsOpen ? competition.submissionUrl : "#submit";
-  link.textContent = competition.submissionsOpen ? "Submit Essay" : "Submissions Closed";
-  link.setAttribute("aria-disabled", String(!competition.submissionsOpen));
-  if (!competition.submissionsOpen || competition.submissionUrl === "SUBMISSION_FORM_URL") link.addEventListener("click", event => { event.preventDefault(); alert("Submissions for the Central Asia Economics Prize 2026 are now closed."); });
-});
-
-function setupAccordion(containerSelector, itemSelector, contentSelector) {
-  document.querySelector(containerSelector)?.addEventListener("click", event => {
-    const button = event.target.closest("button"); if (!button) return;
-    const item = button.closest(itemSelector); const content = item.querySelector(contentSelector); const open = button.getAttribute("aria-expanded") === "true";
-    button.setAttribute("aria-expanded", String(!open)); button.querySelector("i").textContent = open ? "+" : "−"; content.hidden = open;
-  });
-}
-setupAccordion("#rule-list", ".rule-item", ".rule-content"); setupAccordion("#faq-list", ".faq-item", ".faq-answer");
-
-const menu = document.querySelector(".menu-toggle"); const nav = document.querySelector(".site-nav");
-menu.addEventListener("click", () => { const open = nav.classList.toggle("open"); menu.setAttribute("aria-expanded", String(open)); });
-nav.addEventListener("click", event => { if (event.target.closest("a")) { nav.classList.remove("open"); menu.setAttribute("aria-expanded", "false"); } });
-
-const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add("visible"); }), {threshold: 0.08});
-document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
-const progress = document.querySelector(".scroll-progress span"); const backTop = document.querySelector(".back-top");
-window.addEventListener("scroll", () => { const available = document.documentElement.scrollHeight - innerHeight; progress.style.width = `${available ? scrollY / available * 100 : 0}%`; backTop.classList.toggle("show", scrollY > 700); }, {passive:true});
-backTop.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"}));

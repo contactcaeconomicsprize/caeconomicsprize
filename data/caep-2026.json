@@ -1,0 +1,79 @@
+{
+  "year": 2026,
+  "edition": "Inaugural Edition",
+  "status": "completed",
+  "announcementDate": "2026-10-24",
+  "submissions": 183,
+  "countriesAndTerritories": 34,
+  "finalists": 12,
+  "overallWinnerId": "luu-lam-vu",
+  "people": [
+    {"id":"luu-lam-vu","name":"Luu Lam Vu","country":"Vietnam","namePublicationPermission":"Permission granted"},
+    {"id":"kalambekov-balbek","name":"Kalambekov Balbek","country":"Kazakhstan","namePublicationPermission":"Permission granted"},
+    {"id":"samridh-chordia","name":"Samridh Chordia","country":"India","namePublicationPermission":"Permission granted"},
+    {"id":"alice-feng","name":"Alice Feng","country":"Australia","namePublicationPermission":"Permission granted"},
+    {"id":"khalifah-safirena-bahrus","name":"Khalifah Safirena Bahrus","country":"Indonesia","namePublicationPermission":"Permission granted"},
+    {"id":"fatiha-radiah-islam","name":"Fatiha Radiah Islam","country":"United Kingdom","namePublicationPermission":"Permission granted"},
+    {"id":"franziska-moos","name":"Franziska Moos","country":"Germany","namePublicationPermission":"Permission granted"},
+    {"id":"vidyut-sundar","name":"Vidyut Sundar","country":"India","namePublicationPermission":"Permission granted"},
+    {"id":"morgan-chau-dinh","name":"Morgan (Chau) Dinh","country":"Vietnam","namePublicationPermission":"Permission granted"},
+    {"id":"abdumutalibova-zulayxo","name":"Abdumutalibova Zulayxo","country":"Uzbekistan","namePublicationPermission":"Permission granted"},
+    {"id":"jharmi-nandan","name":"Jharmi Nandan","country":"United Arab Emirates","namePublicationPermission":"Permission granted"},
+    {"id":"raxmatulloh-muxtorov","name":"Raxmatulloh Muxtorov","namePublicationPermission":"Permission granted"},
+    {"id":"luca-jarno-liebehentze","name":"Luca Jarno Liebehentze","namePublicationPermission":"Permission granted"},
+    {"id":"kuzhakhmetova-karina","name":"Kuzhakhmetova Karina","namePublicationPermission":"Permission granted"},
+    {"id":"samuel-starling","name":"Samuel Starling","namePublicationPermission":"Permission granted"},
+    {"id":"andrew-ni","name":"Andrew Ni","namePublicationPermission":"Permission granted"}
+  ],
+  "categories": [
+    {
+      "name":"Development Economics",
+      "winnerIds":["kalambekov-balbek"],
+      "honorableMentionIds":["fatiha-radiah-islam","franziska-moos"],
+      "finalistCount":3,
+      "finalistIds":["kalambekov-balbek","raxmatulloh-muxtorov","luca-jarno-liebehentze"]
+    },
+    {
+      "name":"Behavioral Economics",
+      "winnerIds":["samridh-chordia","alice-feng"],
+      "honorableMentionIds":["vidyut-sundar","morgan-chau-dinh"],
+      "finalistCount":2,
+      "finalistIds":["samridh-chordia","alice-feng"]
+    },
+    {
+      "name":"Labor & Public Economics",
+      "winnerIds":["luu-lam-vu"],
+      "honorableMentionIds":["abdumutalibova-zulayxo"],
+      "finalistCount":4,
+      "finalistIds":["luu-lam-vu","kuzhakhmetova-karina","samuel-starling"]
+    },
+    {
+      "name":"Political Economics",
+      "winnerIds":["khalifah-safirena-bahrus"],
+      "honorableMentionIds":["jharmi-nandan"],
+      "finalistCount":3,
+      "finalistIds":["andrew-ni","khalifah-safirena-bahrus"]
+    }
+  ],
+  "essays": [
+    {"authorId":"luu-lam-vu","title":"The Invisible Kindergarten: Should Uzbekistan and Kazakhstan Subsidize Childcare?","publicationStatus":"Permission pending","fullWorkPermission":false,"accessiblePdfVerified":false,"pdf":null},
+    {"authorId":"kalambekov-balbek","title":null,"publicationStatus":"Permission pending","fullWorkPermission":false,"accessiblePdfVerified":false,"pdf":null},
+    {"authorId":"samridh-chordia","title":null,"publicationStatus":"Permission pending","fullWorkPermission":false,"accessiblePdfVerified":false,"pdf":null},
+    {"authorId":"alice-feng","title":null,"publicationStatus":"Permission pending","fullWorkPermission":false,"accessiblePdfVerified":false,"pdf":null},
+    {"authorId":"khalifah-safirena-bahrus","title":null,"publicationStatus":"Permission pending","fullWorkPermission":false,"accessiblePdfVerified":false,"pdf":null}
+  ],
+  "acknowledgments": {
+    "finalJudges":["Dr. Temur Makhkamov","Dr. Nargiza Alimukhamedova","Mrs. Khilola Ruziboeva"],
+    "preliminaryReviewers":["Marufbek Kholmuminov","Khumoyunbek Ibrohimov","Khilola Boymuratova","Boynazarov Asliddin","Marjona Ibrokhimova","Hazratbek Ahmadjonov"],
+    "organizers":[
+      {"name":"Shakhriniso Kholboeva","role":"Founder & Director"},
+      {"name":"Bunyod Kabiljanov","role":"Co-Founder & Academic Lead"},
+      {"name":"Komilkhon Norkhujaev","role":"Co-Founder & Operations Lead"},
+      {"name":"Anis Pulatov","role":"Graphic Designer"}
+    ],
+    "partners":[
+      {"name":"Economic Fundamentals Initiative (EFI) Uzbekistan","role":"Official Partner","url":"https://www.econfun.org/where-we-work/uzbekistan/"},
+      {"name":"The Confluence","role":"Publication Partner","url":"https://www.the-confluence.org"}
+    ]
+  }
+}

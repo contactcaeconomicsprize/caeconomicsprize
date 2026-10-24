@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">CAEP 2026 — Official Results</title>
+  <desc id="description">The inaugural Central Asia Economics Prize. Winners announced October 24, 2026. 183 submissions, 34 countries and territories, four economics categories.</desc>
+  <rect width="1200" height="630" fill="#0f2a43"/>
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#c7a24a" stroke-opacity=".6"/>
+  <circle cx="110" cy="115" r="37" fill="none" stroke="#c7a24a" stroke-width="2"/>
+  <text x="110" y="122" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-size="17">CAEP</text>
+  <text x="175" y="107" fill="#fff" font-family="Georgia,serif" font-size="24">Central Asia Economics Prize</text>
+  <text x="175" y="139" fill="#e1c878" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">2026 · INAUGURAL EDITION</text>
+  <text x="80" y="300" fill="#fff" font-family="Georgia,serif" font-size="88">Official Results</text>
+  <text x="82" y="375" fill="#c7a24a" font-family="Georgia,serif" font-size="38" font-style="italic">Ideas worth celebrating.</text>
+  <path d="M82 428H1118" stroke="#c7a24a" stroke-opacity=".6"/>
+  <text x="82" y="478" fill="#fff" font-family="Arial,sans-serif" font-size="23">Winners announced October 24, 2026</text>
+  <text x="82" y="529" fill="#d9e0e4" font-family="Arial,sans-serif" font-size="20">183 submissions · 34 countries and territories · Four economics categories</text>
+</svg>
